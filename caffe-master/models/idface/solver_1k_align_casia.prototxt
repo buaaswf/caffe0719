@@ -1,0 +1,15 @@
+net:"./models/idface/casia_1k_aligned.prototxt"
+test_iter: 1112
+test_interval: 6000
+test_initialization: false
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 150000
+display: 200
+max_iter: 400000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 6000
+snapshot_prefix: "nets/casia_1k_align"
+solver_mode: GPU
